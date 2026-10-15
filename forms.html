@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      background-color: #d4d2d2;
+      font-family: "Montserrat", sans-serif;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      margin: auto;
+      border: 1px, solid, #000;
+    }
+    .lbl-full {
+      display: block;
+      margin-bottom: 2px;
+      font-weight: bold;
+      width: 100%;
+    }
+    .input-full-w {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <!-- form inputs will go in here..text, emai, password, phone, dates, gender(radio button, check box, select) -->
+   <form action="">
+    <label class="lbl-full" for="full_name">First and Last Name</label>
+    <input class="input-full-w" type="text" name="full_name" id="full_name" placeholder="Enter your full name" required><br><br>
+
+    <label class="lbl-full" for="email">Email</label>
+    <input class="input-full-w" type="email" name="email" id="email" placeholder="Enter your email" required><br><br>
+
+    <label class="lbl-full" for="password">Password</label>
+    <input class="input-full-w" type="password" name="password" id="password" placeholder="Password" required><br><br>
+
+    <label class="lbl-full" for="phone">Phone</label>
+    <input class="input-full-w" type="tel" name="phone" id="phone" placeholder="0712345678" required><br><br>
+
+    <label class="lbl-full" for="dob">Date of Birth</label>
+    <input class="input-full-w" type="date" name="dob" id="dob" required min="1940-01-01" max="2008-12-31" ><br><br>
+
+    <label class="lbl-full" for="gender">Gender</label>
+
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="female" value="female" checked>
+    <label for="female">Female</label><br>
+
+    <label class="lbl-full" for="sports">Sports</label>
+    <input type="checkbox" name="Tennis" id="tennis" value="tennis">
+    <label for="tennis">Tennis</label><br>
+
+    <input type="checkbox" name="Football" id="football" value="football">
+    <label for="football">Football</label><br>
+
+    <input type="checkbox" name="Basketball" id="basketball" value="basketball">
+    <label for="basketball">Basketball</label><br>
+     <br>
+    <label class="lbl-full" for="county">County</label>
+    <select class="input-full-w" name="county" id="county">
+      <option value="">Select your county</option>
+      <option value="nairobi">Nairobi</option>
+      <option value="mombasa">Mombasa</option>
+      <option value="kisumu">Kisumu</option>
+      <option value="nakuru">Nakuru</option>
+    </select><br><br>
+
+    <button type="submit">Submit</button>
+
+
+
+   </form>
+
+
+
+
+</body>
+</html>
