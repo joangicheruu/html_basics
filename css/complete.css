@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+:root{
+  --brand-green:#159957;
+  --brand-dark:#1f2d3d;
+  --soft-bg: #f4f8f7;
+}
+body{
+  color: var(--brand-dark);
+  font-family: "Arimo", sans-serif;
+}
+.brand{
+color: var(--brand-green);
+font-size: 1.45rem;
+}
+.brand:hover{
+  color: #045a2f;
+}
+#dark-title{
+  color: var(--brand-dark);
+}
+.nav-link{
+  color: #536171;
+}
+.nav-link:hover, .nav-link.active{
+  color: var(--brand-green) !important;
+}
+.btn-success{
+  background-color: var(--brand-green)!important;
+  border-color: var(--brand-green)!important;
+  border-radius: 3px;
+  transition: all 2s;
+}
+.btn-success:hover{
+  background-color: #045a2f!important;
+  border-color: #045a2f!important;
+}
+.hero{
+  padding:3.5rem;
+  background: linear-gradient(120deg, #f7faf9,#edf3f1);
+}
+.top-title{
+  color: var(--brand-green);
+  font-size: 0.85rem;
+}
+.hero h1{
+  font-size: 2.5rem;
+  color: var(--brand-dark);
+  line-height: 1.08;
+}
+.section-heading h2{
+  margin-bottom: 0.4rem;
+}
+.card{
+  border-color: #e5e9ec;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.card:hover{
+  transform: translateY(-5px);
+   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  .about-section{
+    background-color: var(--soft-bg);
+  }
+  .about-section i{
+    color: var(--brand-green);
+    font-size: 2rem;
+
+  }
+  .about-section p{
+    max-width: 600px;
+    margin: auto;
+  }
+  /* TODO center it */
+  .footer{
+    background-color: var(--brand-dark);
+    color: #fff;
+    
+  }
+  .footer a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer a:hover{
+    color: var(--brand-green);
+    text-decoration: underline;
+  }
+  .copyright{
+    background-color: #0e1a26;
+    color: #fff;
+    padding: 1rem 0;
+  }
